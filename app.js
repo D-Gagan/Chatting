@@ -14,7 +14,7 @@ app.use(express.static('public'));
 passport.use(new GoogleStrategy({
   clientID: '888153648277-6al662vpm8h771vtoiqnul5brhc68jg3.apps.googleusercontent.com',
   clientSecret: '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',
-  callbackURL: 'https://d-gagan.github.io/Chatting/auth/google/callback',
+  callbackURL: 'https://d-gagan.github.io/Chatting/index.html',
 }, (accessToken, refreshToken, profile, done) => {
   // Save user information in the session
   return done(null, profile);
